@@ -1,0 +1,36 @@
+<section id="work" class="work_experience_area pt-115 mb-50">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section_title text-center pb-30">
+                    <h5 class="sub_title">Experiencia</h5>
+                    <h3 class="main_title">Experiencia laboral</h3>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="work_experience">
+            <div class="row" *ngFor="let xp of data; let i=index">
+                <div class="col-lg-12">
+                    <div class="single_experience d-lg-flex align-items-center flex-wrap">
+                        <div class="experience_title {{ i % 2 == 0 ? 'order-last' : 'text-lg-right' }}">
+                            <h3 class="title">{{ xp.cargo }}</h3>
+                            <p>{{ xp.empresa }}</p>
+                            <span class="date">{{ xp.fechas }}</span>
+                        </div>
+                        <div class="experience_number">
+                            <span>{{ i }}</span>
+                        </div>
+                        <div class="experience_content {{ i % 2 == 0 ? 'order-first' : '' }}">
+                            <p>{{ xp.actividades }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

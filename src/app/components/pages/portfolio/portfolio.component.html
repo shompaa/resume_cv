@@ -1,0 +1,30 @@
+<section id="project" class="project_area pt-125">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <div class="section_title pb-30">
+                    <h5 class="sub_title">Portfolio</h5>
+                    <h3 class="main_title">Latest Projects</h3>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row project_active">
+            <div class="col-lg-4" *ngFor="let p of data">
+                <div class="single_project">
+                    <div class="project_image">
+                        <img [src]="p.imagen" alt="project">
+                    </div>
+                    <div class="project_content">
+                        <h4 class="project_title"><a [href]="p.link">{{ p.nombre }}</a></h4>
+                        <p>{{ p.subtitulo }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
