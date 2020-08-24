@@ -23,10 +23,10 @@
                             <span class="date">{{ xp.fechas }}</span>
                         </div>
                         <div class="experience_number">
-                            <span>{{ i }}</span>
+                            <span>{{ i + 1 }}</span>
                         </div>
                         <div class="experience_content {{ i % 2 == 0 ? 'order-first' : '' }}">
-                            <p>{{ xp.actividades }}</p>
+                            <div [innerHTML]="xp.actividades"></div>
                         </div>
                     </div>
                 </div>

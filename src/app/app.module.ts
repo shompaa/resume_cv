@@ -10,7 +10,9 @@ import { SkillsComponent } from './components/pages/skills/skills.component';
 import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
 import { ExperienceComponent } from './components/pages/experience/experience.component';
 import { FooterComponent } from './components/pages/footer/footer.component';
+import { SocialComponent } from './components/social/social.component';
 import { DataServiceService } from './services/data-service.service';
+import { OthersComponent } from './components/pages/others/others.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { DataServiceService } from './services/data-service.service';
     SkillsComponent,
     PortfolioComponent,
     ExperienceComponent,
-    FooterComponent
+    FooterComponent,
+    SocialComponent,
+    OthersComponent
   ],
   imports: [
     BrowserModule,
